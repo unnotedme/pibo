@@ -3,7 +3,7 @@ import { BoxContainer, SubmitButton, MutedLink, BoldLink, FormContainer, Input }
 import { Marginer } from "../marginer";
 import { AccountContext } from "./accountContext";
 
-export function SignupForm(props) {
+export function SignupForm() {
 
     const { switchToLogIn } = React.useContext(AccountContext);
 
