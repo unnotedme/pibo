@@ -3,16 +3,16 @@ CREATE DATABASE register;
 USE register;
 
 CREATE TABLE user_register (
-    user_id int identity(1,1) PRIMARY KEY,
+    user_id int AUTO_INCREMENT PRIMARY KEY,
     email varchar(255),
     user_password varchar(255),
-    guardian_name varchar(255),
-    )
+    guardian_name varchar(255)
+    );
 
 
 CREATE TABLE pet_register (
     user_id_FK int,
-    pet_id int identity(1,1) PRIMARY KEY,
+    pet_id int AUTO_INCREMENT PRIMARY KEY,
     pet_name varchar(255),
     birthday varchar(255),
     specie varchar(255),
