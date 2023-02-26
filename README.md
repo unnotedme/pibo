@@ -15,8 +15,8 @@ Pibo is a simple, easy to use, and powerful application for managing your pet's 
 To download the repository and install dependencies, run the following commands:
 
 ```bash
-git clone git://github.com/unnotedme/roots.git # replace [unnotedme] with your github username if you fork first.
-cd roots
+git clone git://github.com/unnotedme/pibo.git # replace [unnotedme] with your github username if you fork first.
+cd pibo
 npm install
 ```
 
