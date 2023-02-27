@@ -1,6 +1,6 @@
-CREATE DATABASE register;
+CREATE DATABASE pibo;
 
-USE register;
+USE pibo;
 
 CREATE TABLE user_register (
     user_id int AUTO_INCREMENT PRIMARY KEY,
@@ -27,3 +27,10 @@ CREATE TABLE cat_medical (
     cat_vaccine_fivfelv boolean,
     FOREIGN KEY (cat_id_FK) REFERENCES pet_register(pet_id)
     );    
+
+CREATE TABLE user_login (
+    user_id_fk int,
+    email varchar(255),
+    user_password varchar(255),
+    FOREIGN KEY (user_id_fk) REFERENCES user_register(user_id)
+    );
