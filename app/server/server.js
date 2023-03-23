@@ -2,12 +2,15 @@ const express = require("express")
 const mysql = require("mysql2")
 const app = express()
 
+const dotenv = require("dotenv");
+dotenv.config();
+
 
 const db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",   //write password here
-    database: "pibo"
+    host: process.env.REACT_APP_HOST,
+    user: process.env.REACT_APP_USER,
+    password: process.env.REACT_APP_PASSWORD,
+    database: process.env.REACT_APP_DB
 })
 
 app.listen(5000, () => {console.log("Server started on port 5000.")})
